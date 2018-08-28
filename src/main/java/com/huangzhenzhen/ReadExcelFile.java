@@ -108,7 +108,7 @@ public class ReadExcelFile {
      */
     private String[] getDecodeData(String phoneMd5, String idCardMd5) throws Exception {
         String[] result = new String[2];
-        String url = "http://172.16.5.160:8084/md5/query";
+        String url = "";
         String postJson = "{\"phone_md5\":\"%s\",\"id_card_md5\":\"%s\"}";
         postJson = String.format(postJson, phoneMd5, idCardMd5);
         // OkHttpUtils 调用
